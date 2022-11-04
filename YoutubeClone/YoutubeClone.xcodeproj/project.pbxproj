@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC7A85B229155C4F00227445 /* ChannelResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A85B129155C4F00227445 /* ChannelResponse.swift */; };
+		BC7A85B429155D9F00227445 /* PlaylistItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7A85B329155D9F00227445 /* PlaylistItemResponse.swift */; };
 		BC86004A2914B596005DADD1 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8600492914B596005DADD1 /* ServiceLayer.swift */; };
+		BC86004C2914B641005DADD1 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC86004B2914B641005DADD1 /* NetworkError.swift */; };
+		BC86004E2914B663005DADD1 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC86004D2914B663005DADD1 /* Request.swift */; };
+		BC8600512914B87E005DADD1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8600502914B87E005DADD1 /* Constants.swift */; };
+		BC8600572914BBAF005DADD1 /* HomeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8600562914BBAF005DADD1 /* HomeProvider.swift */; };
+		BC8600592914BC2C005DADD1 /* VideoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8600582914BC2C005DADD1 /* VideoResponse.swift */; };
+		BC86005B2914C257005DADD1 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC86005A2914C257005DADD1 /* HomePresenter.swift */; };
 		BC890DB129141F3E007718C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC890DB029141F3E007718C8 /* AppDelegate.swift */; };
 		BC890DB329141F3E007718C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC890DB229141F3E007718C8 /* SceneDelegate.swift */; };
 		BC890DB529141F3E007718C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC890DB429141F3E007718C8 /* ViewController.swift */; };
 		BC890DB829141F3E007718C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC890DB629141F3E007718C8 /* Main.storyboard */; };
 		BC890DBA29141F41007718C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC890DB929141F41007718C8 /* Assets.xcassets */; };
 		BC890DBD29141F41007718C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC890DBB29141F41007718C8 /* LaunchScreen.storyboard */; };
-		BC890DC629142C18007718C8 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC890DC529142C18007718C8 /* Playlist.swift */; };
+		BC890DC629142C18007718C8 /* PlaylistResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC890DC529142C18007718C8 /* PlaylistResponse.swift */; };
 		BC8EAC872914904F0033CD45 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EAC862914904F0033CD45 /* RootPageViewController.swift */; };
 		BC8EAC892914907B0033CD45 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EAC882914907B0033CD45 /* MainViewController.swift */; };
 		BC8EAC93291492890033CD45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EAC91291492890033CD45 /* HomeViewController.swift */; };
@@ -30,7 +38,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC7A85B129155C4F00227445 /* ChannelResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelResponse.swift; sourceTree = "<group>"; };
+		BC7A85B329155D9F00227445 /* PlaylistItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistItemResponse.swift; sourceTree = "<group>"; };
 		BC8600492914B596005DADD1 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
+		BC86004B2914B641005DADD1 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		BC86004D2914B663005DADD1 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		BC8600502914B87E005DADD1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BC8600562914BBAF005DADD1 /* HomeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProvider.swift; sourceTree = "<group>"; };
+		BC8600582914BC2C005DADD1 /* VideoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoResponse.swift; sourceTree = "<group>"; };
+		BC86005A2914C257005DADD1 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		BC890DAD29141F3E007718C8 /* YoutubeClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC890DB029141F3E007718C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC890DB229141F3E007718C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,7 +55,7 @@
 		BC890DB929141F41007718C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC890DBC29141F41007718C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC890DBE29141F41007718C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BC890DC529142C18007718C8 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		BC890DC529142C18007718C8 /* PlaylistResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistResponse.swift; sourceTree = "<group>"; };
 		BC8EAC862914904F0033CD45 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 		BC8EAC882914907B0033CD45 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BC8EAC91291492890033CD45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -69,8 +85,51 @@
 			isa = PBXGroup;
 			children = (
 				BC8600492914B596005DADD1 /* ServiceLayer.swift */,
+				BC86004B2914B641005DADD1 /* NetworkError.swift */,
+				BC86004D2914B663005DADD1 /* Request.swift */,
 			);
 			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		BC86004F2914B872005DADD1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC8600502914B87E005DADD1 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BC8600522914BB64005DADD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC8600552914BBA1005DADD1 /* Provider */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BC8600532914BB6E005DADD1 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BC86005A2914C257005DADD1 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BC8600542914BB7C005DADD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BC8EAC91291492890033CD45 /* HomeViewController.swift */,
+				BC8EAC92291492890033CD45 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BC8600552914BBA1005DADD1 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				BC8600562914BBAF005DADD1 /* HomeProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 		BC890DA429141F3E007718C8 = {
@@ -92,6 +151,7 @@
 		BC890DAF29141F3E007718C8 /* YoutubeClone */ = {
 			isa = PBXGroup;
 			children = (
+				BC86004F2914B872005DADD1 /* Utils */,
 				BC8600482914B580005DADD1 /* ServiceLayer */,
 				BC8EAC8E2914924F0033CD45 /* About */,
 				BC8EAC8B291492340033CD45 /* Channels */,
@@ -114,7 +174,10 @@
 		BC890DC429142BF9007718C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BC890DC529142C18007718C8 /* Playlist.swift */,
+				BC890DC529142C18007718C8 /* PlaylistResponse.swift */,
+				BC8600582914BC2C005DADD1 /* VideoResponse.swift */,
+				BC7A85B129155C4F00227445 /* ChannelResponse.swift */,
+				BC7A85B329155D9F00227445 /* PlaylistItemResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -131,8 +194,9 @@
 		BC8EAC8A2914922C0033CD45 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				BC8EAC91291492890033CD45 /* HomeViewController.swift */,
-				BC8EAC92291492890033CD45 /* HomeViewController.xib */,
+				BC8600542914BB7C005DADD1 /* View */,
+				BC8600532914BB6E005DADD1 /* Presenter */,
+				BC8600522914BB64005DADD1 /* Model */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -250,17 +314,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC8EAC9F291492C50033CD45 /* ChannelsViewController.swift in Sources */,
+				BC7A85B429155D9F00227445 /* PlaylistItemResponse.swift in Sources */,
+				BC8600572914BBAF005DADD1 /* HomeProvider.swift in Sources */,
 				BC890DB529141F3E007718C8 /* ViewController.swift in Sources */,
 				BC8EACA3291492D30033CD45 /* AboutViewController.swift in Sources */,
 				BC890DB129141F3E007718C8 /* AppDelegate.swift in Sources */,
 				BC8EAC872914904F0033CD45 /* RootPageViewController.swift in Sources */,
+				BC8600512914B87E005DADD1 /* Constants.swift in Sources */,
+				BC7A85B229155C4F00227445 /* ChannelResponse.swift in Sources */,
 				BC8EAC892914907B0033CD45 /* MainViewController.swift in Sources */,
 				BC8EAC9B291492BC0033CD45 /* PlaylistsViewController.swift in Sources */,
 				BC86004A2914B596005DADD1 /* ServiceLayer.swift in Sources */,
 				BC890DB329141F3E007718C8 /* SceneDelegate.swift in Sources */,
+				BC8600592914BC2C005DADD1 /* VideoResponse.swift in Sources */,
 				BC8EAC93291492890033CD45 /* HomeViewController.swift in Sources */,
+				BC86004C2914B641005DADD1 /* NetworkError.swift in Sources */,
+				BC86004E2914B663005DADD1 /* Request.swift in Sources */,
+				BC86005B2914C257005DADD1 /* HomePresenter.swift in Sources */,
 				BC8EAC97291492AD0033CD45 /* VideosViewController.swift in Sources */,
-				BC890DC629142C18007718C8 /* Playlist.swift in Sources */,
+				BC890DC629142C18007718C8 /* PlaylistResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
