@@ -1,0 +1,266 @@
+{
+    "kind": "youtube#playlistItemListResponse",
+    "etag": "_uJe40Em2lxd4XTsNaPbQzZYUvU",
+    "nextPageToken": "EAAaBlBUOkNBVQ",
+    "items": [
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "TYB4Xq2w9Gxl8Gc5K4DkL6MnNZk",
+            "id": "UExKc2VNZXlwbXk3bGxXQVZvaFZVRFhzZVJwXzJUMXZkdy4zMUEyMkQwOTk0NTg4MDgw",
+            "snippet": {
+                "publishedAt": "2021-01-27T17:16:52Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Summer Walker - Body [Official Music Video]",
+                "description": "Summer Walker - Body\nListen: https://smarturl.it/OverItSW\nSpotify: https://smarturl.it/OverItSW/spotify\nApple Music: https://smarturl.it/OverItSW/applemusic\n\nConnect:\nhttp://www.instagram.com/SummerWalker\nhttp://www.facebook.com/SummerWalkerOfficial\nhttp://www.twitter.com/IAMSUMMERWALKER\n\n#SummerWalker #Body #OverIt",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/PY9HTSBXE8s/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/PY9HTSBXE8s/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/PY9HTSBXE8s/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/PY9HTSBXE8s/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/PY9HTSBXE8s/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "playlistId": "PLJseMeypmy7llWAVohVUDXseRp_2T1vdw",
+                "position": 0,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "PY9HTSBXE8s"
+                },
+                "videoOwnerChannelTitle": "Summer Walker",
+                "videoOwnerChannelId": "UCSpNS4dJ8wIScwMqatIdiQw"
+            },
+            "contentDetails": {
+                "videoId": "PY9HTSBXE8s",
+                "videoPublishedAt": "2021-01-27T17:00:13Z"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "-6N0h5smCr3QnuQhILZdCdKeirM",
+            "id": "UExKc2VNZXlwbXk3bGxXQVZvaFZVRFhzZVJwXzJUMXZkdy4wMTYxQzVBRDI1NEVDQUZE",
+            "snippet": {
+                "publishedAt": "2020-01-07T17:33:31Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Summer Walker - Come Thru (with Usher) [Official Music Video]",
+                "description": "Summer Walker - Come Thru (with Usher)\n\"Over It\" out now: https://smarturl.it/OverItSW\n\nDirected by Lacey Duke\n\nListen: https://smarturl.it/OverItSW\nApple: https://smarturl.it/OverItSW/applemusic\nSpotify: https://smarturl.it/OverItSW/spotify\niTunes: https://smarturl.it/OverItSW/itunes\n\nSubscribe to Summer Walker - http://smarturl.it/SWSubscribe \n\nFollow Summer Walker:\nhttp://www.instagram.com/SummerWalker\nhttp://www.facebook.com/SummerWalkerOfficial\nhttp://www.twitter.com/iamSUMMERWALKER\n\n#SummerWalker #ComeThru #Usher",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/BOaJloEPUCg/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/BOaJloEPUCg/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/BOaJloEPUCg/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/BOaJloEPUCg/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/BOaJloEPUCg/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "playlistId": "PLJseMeypmy7llWAVohVUDXseRp_2T1vdw",
+                "position": 1,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "BOaJloEPUCg"
+                },
+                "videoOwnerChannelTitle": "Summer Walker",
+                "videoOwnerChannelId": "UCSpNS4dJ8wIScwMqatIdiQw"
+            },
+            "contentDetails": {
+                "videoId": "BOaJloEPUCg",
+                "videoPublishedAt": "2020-01-07T16:00:11Z"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "pjrxDiw8Jab3yXnM_oGthjHicsY",
+            "id": "UExKc2VNZXlwbXk3bGxXQVZvaFZVRFhzZVJwXzJUMXZkdy41NTZEOThBNThFOUVGQkVB",
+            "snippet": {
+                "publishedAt": "2019-10-08T18:12:40Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Summer Walker - Playing Games (with Bryson Tiller) [Official Music Video]",
+                "description": "Summer Walker - Playing Games (with Bryson Tiller)\n\nNew merch on sale now: https://smarturl.it/shopsummerwalker\n\nSee Summer live on The First and Last Tour tickets on sale now: https://www.summerwalkermusic.com\n\n\"Over It\" out now: https://smarturl.it/OverItSW\n\nListen: https://smarturl.it/PlayingGamesSW\nApple: https://smarturl.it/PlayingGames/applemusic\nSpotify: https://smarturl.it/PlayingGames/Spotify\niTunes: https://smarturl.it/PlayingGames/iTunes\n\nDirector: Christine Yuan\nProducer: Theodore Cabana\nProduction Company: Object & Animal\n\nSubscribe to Summer Walker - http://smarturl.it/SWSubscribe \n\nFollow Summer Walker:\nhttp://www.instagram.com/SummerWalker\nhttp://www.facebook.com/SummerWalkerOfficial\nhttp://www.twitter.com/iamSUMMERWALKER\n\n#SummerWalker #PlayingGames #OverIt",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/SDSXLkD74KE/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/SDSXLkD74KE/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/SDSXLkD74KE/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/SDSXLkD74KE/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/SDSXLkD74KE/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "playlistId": "PLJseMeypmy7llWAVohVUDXseRp_2T1vdw",
+                "position": 2,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "SDSXLkD74KE"
+                },
+                "videoOwnerChannelTitle": "Summer Walker",
+                "videoOwnerChannelId": "UCSpNS4dJ8wIScwMqatIdiQw"
+            },
+            "contentDetails": {
+                "videoId": "SDSXLkD74KE",
+                "videoPublishedAt": "2019-10-08T16:00:12Z"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "SPsDBk_rYXRZG6GMBlUeam1R8FA",
+            "id": "UExKc2VNZXlwbXk3bGxXQVZvaFZVRFhzZVJwXzJUMXZkdy42Qzk5MkEzQjVFQjYwRDA4",
+            "snippet": {
+                "publishedAt": "2019-10-04T06:06:49Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Summer Walker - Stretch You Out ft. A Boogie wit da Hoodie (Official Music Video)",
+                "description": "Summer Walker (feat. A Boogie wit da Hoodie) - Stretch You Out \n\nSummer Walker's debut Album Over It, out now: https://smarturl.it/OverItSW\n\nListen: https://smarturl.it/StretchYouOut \nSpotify: https://smarturl.it/StretchYouOut/spo...\nApple Music: https://smarturl.it/StretchYouOut/app...\niTunes: https://smarturl.it/StretchYouOut/itunes \n\nDirector: maliaSHUTup \nProducer: Francine Nazario Cinematographer: Kayla Hoff\nSet Designer: Dureen Truong\nEditor: Chaz Smedley \nColor: Adrian Per\nCommissioner: Marissa Ramirez \n\nFollow Summer Walker:\nhttp://www.instagram.com/SummerWalker\nhttps://www.facebook.com/SummerWalker...\nhttps://twitter.com/IAMSUMMERWALKER\n\nSubscribe to Summer Walker - http://smarturl.it/SWSubscribe \n\nText Summer Walker (404)-476-6404\n\nLyrics: \nN*ggas be insecure\n\nClaiming that you ain’t doing enough\n\nClaiming that they need more\n\nWhat you on your last breath\n\nYour last sweat\n\nYour last dime\n\nOut of your f*cking mind\n\nCan’t you see I’m f*cking trying\n\nYou want p*ssy 6 times a week\n\nAnd you never wanna clean up\n\nAnd you talk to me like sh*t\n\nAnd you handle me too rough\n\nAnd at the end of the day you got the nerve to bring up that b*tch\n\nThat’s the difference\n\n\nAnd when I feel like this I can’t take no sh*t\n\nStretch you out, out, out, out, out\n\nWe gon stretch you out, out, out, out, out\n\nU Just wanna have fun, fun, fun (Ohh)\n\nWe gon make you come, come, come, come\n\n\n(A Boogie wit da Hoodie)\n\nGirl I heard that you been hurtin\n\nJust let me know if it ain’t worth it\n\nI could put mad Baguettes on you on purpose\n\nAnd we could go half on a baby on purpose\n\nAnd I’m going back just close the curtains purposely\n\nEverything you do me you do it perfectly\n\nAnd I be in your body like surgery\n\nLike an insomniac gotta pop a purpy to sleep, yeah\n\nPut that ass round in a circle please\n\nPut that ass round in a circle for me yeah\n\nLike your workin for me don’t you show no other nigga what you learning from me yeah\n\nStretch you out, out, out, out, out\n\nWe gon stretch you out, out, out, out, out\n\nYou Just wanna have fun, fun, fun (Ohh)\n\nWe gon make you come, come, come, come\n\nWe gonna smile\n\n#SummerWalker #StretchYouOut #OverIt\n\n\nMusic video by Summer Walker performing Stretch You Out. © 2019 LVRN/Interscope Records\n\nhttp://vevo.ly/TsWt4Q",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/w98GE4kHJzM/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/w98GE4kHJzM/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/w98GE4kHJzM/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/w98GE4kHJzM/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/w98GE4kHJzM/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "playlistId": "PLJseMeypmy7llWAVohVUDXseRp_2T1vdw",
+                "position": 3,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "w98GE4kHJzM"
+                },
+                "videoOwnerChannelTitle": "SummerWalkerVEVO",
+                "videoOwnerChannelId": "UC4NBMVsQp6QvIjzUeaqX3ZA"
+            },
+            "contentDetails": {
+                "videoId": "w98GE4kHJzM",
+                "videoPublishedAt": "2019-09-24T04:00:04Z"
+            }
+        },
+        {
+            "kind": "youtube#playlistItem",
+            "etag": "j0179qrLfN-ExbH5jSlZiAeSWuc",
+            "id": "UExKc2VNZXlwbXk3bGxXQVZvaFZVRFhzZVJwXzJUMXZkdy41QTY1Q0UxMTVCODczNThE",
+            "snippet": {
+                "publishedAt": "2019-10-04T04:22:35Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Summer Walker - Over It [Official Audio]",
+                "description": "\"Over It\" out now: https://smarturl.it/OverItSW\n\nTour: https://www.summerwalkermusic.com\n\nSubscribe to Summer Walker - http://smarturl.it/SWSubscribe \n\nFollow Summer Walker:\nhttp://www.instagram.com/SummerWalker\nhttp://www.facebook.com/SummerWalkerOfficial\nhttp://www.twitter.com/IAMSUMMERWALKER\n\n#SummerWalker #OverIt #LVRN",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/1A0CuoluUr0/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/1A0CuoluUr0/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/1A0CuoluUr0/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/1A0CuoluUr0/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/1A0CuoluUr0/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "playlistId": "PLJseMeypmy7llWAVohVUDXseRp_2T1vdw",
+                "position": 4,
+                "resourceId": {
+                    "kind": "youtube#video",
+                    "videoId": "1A0CuoluUr0"
+                },
+                "videoOwnerChannelTitle": "Summer Walker",
+                "videoOwnerChannelId": "UCSpNS4dJ8wIScwMqatIdiQw"
+            },
+            "contentDetails": {
+                "videoId": "1A0CuoluUr0",
+                "videoPublishedAt": "2019-10-04T04:00:01Z"
+            }
+        }
+    ],
+    "pageInfo": {
+        "totalResults": 24,
+        "resultsPerPage": 5
+    }
+}

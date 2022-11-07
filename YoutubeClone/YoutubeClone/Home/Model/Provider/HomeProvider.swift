@@ -7,14 +7,14 @@
 
 import Foundation
 
-protocol HomeProviderDelegate {
+protocol HomeProviderProtocol {
     func getVideos(searchString: String?, channelId: String?) async throws -> VideoResponse
     func getChannel(channelId: String) async throws -> ChannelResponse
     func getPlaylists(channelId: String) async throws -> PlaylistResponse
     func getPlaylistItems(playlistId: String) async throws -> PlaylistItemResponse
 }
 
-class HomeProvider: HomeProviderDelegate {
+class HomeProvider: HomeProviderProtocol {
     func getVideos(searchString: String? = nil, channelId: String? = nil) async throws -> VideoResponse {
         var queryParams = ["part": "snippet", "type": "video"]
         

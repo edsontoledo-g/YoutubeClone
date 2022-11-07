@@ -12,12 +12,17 @@ protocol HomePresenterDelegate: AnyObject {
 }
 
 class HomePresenter {
-    var provider: HomeProviderDelegate
+    var provider: HomeProviderProtocol
     weak var delegate: HomePresenterDelegate?
     private var objectArray: [[Any]] = []
     
-    init(provider: HomeProviderDelegate = HomeProvider()) {
+    init(provider: HomeProviderProtocol = HomeProvider()) {
         self.provider = provider
+        #if DEBUG
+        if MockManager.shared.runAppWithMock {
+            self.provider = HomeProviderMock()
+        }
+        #endif
     }
     
     @MainActor
