@@ -8,13 +8,14 @@
 import Foundation
 
 protocol HomePresenterDelegate: AnyObject {
-    func getData(array: [[Any]])
+    func getData(array: [[Any]], sectionTitleArray: [String])
 }
 
 class HomePresenter {
     var provider: HomeProviderProtocol
     weak var delegate: HomePresenterDelegate?
     private var objectArray: [[Any]] = []
+    private var sectionTitleArray: [String] = []
     
     init(provider: HomeProviderProtocol = HomeProvider()) {
         self.provider = provider
@@ -28,6 +29,7 @@ class HomePresenter {
     @MainActor
     func getHomeObjects() async {
         objectArray.removeAll()
+        sectionTitleArray.removeAll()
         
         async let responseChannel = try await provider.getChannel(channelId: Constants.channelId).items
         async let responsePlaylists = try await provider.getPlaylists(channelId: Constants.channelId).items
@@ -35,15 +37,21 @@ class HomePresenter {
         do {
             let (channel, playlists, videos) = await (try responseChannel, try responsePlaylists, try responseVideos)
             objectArray.append(channel)
+            sectionTitleArray.append("")
             
             if let playlistId = playlists.first?.id, let playlistItems = await getPlaylistItems(playlistId: playlistId)?.items {
                 objectArray.append(playlistItems)
+                sectionTitleArray.append(playlists.first?.snippet?.title ?? "")
             }
             
-            objectArray.append(playlists)
             objectArray.append(videos)
+            sectionTitleArray.append("Uploads")
             
-            delegate?.getData(array: objectArray)
+            objectArray.append(playlists)
+            sectionTitleArray.append("Created Playlists")
+            
+            
+            delegate?.getData(array: objectArray, sectionTitleArray: sectionTitleArray)
         } catch {
             print(error.localizedDescription)
         }

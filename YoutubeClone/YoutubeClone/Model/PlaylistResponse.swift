@@ -74,9 +74,9 @@ struct PlaylistResponse: Decodable {
             
             struct Thumbnails: Decodable {
                 let `default`: Thumbnail
-                let medim: Thumbnail
-                let hight: Thumbnail
-                let starndard: Thumbnail
+                let medium: Thumbnail
+                let high: Thumbnail
+                let standard: Thumbnail
                 let maxres: Thumbnail
                 
                 struct Thumbnail: Decodable {

@@ -83,10 +83,8 @@ struct VideoResponse: Decodable {
             
             struct Thumbnails: Decodable {
                 let `default`: Thumbnail
-                let medim: Thumbnail
-                let hight: Thumbnail
-                let starndard: Thumbnail
-                let maxres: Thumbnail
+                let medium: Thumbnail
+                let high: Thumbnail
             }
             
             struct Thumbnail: Decodable {

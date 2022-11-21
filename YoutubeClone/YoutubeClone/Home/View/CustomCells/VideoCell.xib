@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="VideoCell" customModule="YoutubeClone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Fxu-Zf-jtr">
+                        <rect key="frame" x="16" y="8" width="334" height="84"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoImage" translatesAutoresizingMaskIntoConstraints="NO" id="Soc-yD-9ZE">
+                                <rect key="frame" x="0.0" y="1" width="136.66666666666666" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="LEs-Sg-g26"/>
+                                    <constraint firstAttribute="width" secondItem="Soc-yD-9ZE" secondAttribute="height" multiplier="5:3" id="NVs-ls-FpN"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="88y-lS-adt">
+                                <rect key="frame" x="144.66666666666663" y="6" width="189.33333333333337" height="72"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summer Walker - Body [Official Music Video]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qkY-2c-ag6">
+                                        <rect key="frame" x="0.0" y="0.0" width="189.33333333333334" height="40.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summer Walker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eXr-Ab-xXv">
+                                        <rect key="frame" x="0.0" y="40.666666666666664" width="189.33333333333334" height="15.666666666666664"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <color key="textColor" name="grayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="47 M Views · 1 Year Ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zc-xB-aFv">
+                                        <rect key="frame" x="0.0" y="56.333333333333321" width="189.33333333333334" height="15.666666666666664"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                        <color key="textColor" name="grayColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gIO-kq-u6v">
+                        <rect key="frame" x="342" y="8" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="LGb-Ht-8F1"/>
+                            <constraint firstAttribute="width" secondItem="gIO-kq-u6v" secondAttribute="height" multiplier="1:1" id="e8I-cD-tg3"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Button" image="dots"/>
+                        <connections>
+                            <action selector="moreButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hwH-7K-3Ns"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Fxu-Zf-jtr" secondAttribute="trailing" constant="24" id="1d0-9K-qI4"/>
+                    <constraint firstAttribute="bottom" secondItem="Fxu-Zf-jtr" secondAttribute="bottom" constant="8" id="4Ml-XL-314"/>
+                    <constraint firstItem="Fxu-Zf-jtr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="H8c-5T-9Z3"/>
+                    <constraint firstItem="gIO-kq-u6v" firstAttribute="top" secondItem="Fxu-Zf-jtr" secondAttribute="top" id="HbJ-WS-oMe"/>
+                    <constraint firstItem="Fxu-Zf-jtr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Kyq-yO-6Zm"/>
+                    <constraint firstItem="Fxu-Zf-jtr" firstAttribute="trailing" secondItem="gIO-kq-u6v" secondAttribute="trailing" constant="-8" id="kzh-L5-6nj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="backgroundColor"/>
+            <connections>
+                <outlet property="channelName" destination="eXr-Ab-xXv" id="Xb1-HI-rHF"/>
+                <outlet property="moreButton" destination="gIO-kq-u6v" id="zVA-74-tlx"/>
+                <outlet property="videoImage" destination="Soc-yD-9ZE" id="PE0-2X-JbJ"/>
+                <outlet property="videoInfoLabel" destination="2Zc-xB-aFv" id="Uwy-ZP-im9"/>
+                <outlet property="videoTitle" destination="qkY-2c-ag6" id="kI9-v5-JKz"/>
+            </connections>
+            <point key="canvasLocation" x="167.93893129770993" y="32.394366197183103"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dots" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="videoImage" width="295" height="178"/>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grayColor">
+            <color red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

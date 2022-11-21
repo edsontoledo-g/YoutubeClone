@@ -9,7 +9,7 @@ import Foundation
 
 class HomeProviderMock: HomeProviderProtocol {
     func getVideos(searchString: String?, channelId: String?) async throws -> VideoResponse {
-        Utils.decodeJSON(VideoResponse.self, filename: "SearchVideos.json")
+        Utils.decodeJSON(VideoResponse.self, filename: "Videos.json")
     }
     
     func getChannel(channelId: String) async throws -> ChannelResponse {

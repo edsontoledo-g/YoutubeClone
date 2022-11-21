@@ -79,10 +79,8 @@ struct ChannelResponse: Decodable {
             
             struct Thumbnails: Decodable {
                 let `default`: Thumbnail
-                let medim: Thumbnail
-                let hight: Thumbnail
-                let starndard: Thumbnail
-                let maxres: Thumbnail
+                let medium: Thumbnail
+                let high: Thumbnail
             }
             
             struct Thumbnail: Decodable {
@@ -95,7 +93,6 @@ struct ChannelResponse: Decodable {
         struct Statistics: Decodable {
             let viewCount: String
             let subscriberCount: String
-            let hiddenSubscriberCount: String
             let videoCount: String
         }
         
