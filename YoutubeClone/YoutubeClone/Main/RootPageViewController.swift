@@ -12,19 +12,24 @@ protocol RootPageViewControllerDelegate: AnyObject {
 }
 
 class RootPageViewController: UIPageViewController {
-    var subviewControllers = [UIViewController]()
-    var currentIndex = 0 {
-        didSet {
-            setViewControllers([subviewControllers[currentIndex]], direction: .forward, animated: true)
-        }
+    enum ScrollDirection: Int {
+        case stop = 0
+        case right = 1
+        case left = -1
     }
+    
+    var subviewControllers = [UIViewController]()
+    var currentIndex = 0
     weak var rootPageDelegate: RootPageViewControllerDelegate?
+    var startOffset: CGFloat = 0.0
+    var currentPage = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
         dataSource = self
         
+        rootPageDelegate?.currentPage(0)
         setUpViewControllers()
     }
     

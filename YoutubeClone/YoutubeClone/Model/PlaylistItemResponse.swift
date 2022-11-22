@@ -15,11 +15,13 @@ struct PlaylistItemResponse: Decodable {
         let kind: String
         let id: String?
         let snippet: VideoResponse.Item.Snippet?
+        let contentDetails: ContentDetails?
         
         enum CodingKeys: CodingKey {
             case kind
             case id
             case snippet
+            case contentDetails
         }
         
         init(from decoder: Decoder) throws {
@@ -42,11 +44,21 @@ struct PlaylistItemResponse: Decodable {
             } else {
                 self.snippet = nil
             }
+            
+            if let contentDetails = try? container.decode(ContentDetails.self, forKey: .contentDetails) {
+                self.contentDetails = contentDetails
+            } else {
+                self.contentDetails = nil
+            }
         }
         
         struct ItemId: Decodable {
             let kind: String
             let videoId: String
+        }
+        
+        struct ContentDetails: Decodable {
+            let videoId: String?
         }
     }
 }

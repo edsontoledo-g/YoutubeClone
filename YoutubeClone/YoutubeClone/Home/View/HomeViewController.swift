@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import FloatingPanel
 
 class HomeViewController: UIViewController {
     var presenter = HomePresenter()
     private var objectArray = [[Any]]()
     private var sectionTitleArray = [String]()
+    var fpc: FloatingPanelController!
     
     @IBOutlet var tableViewHome: UITableView!
     
@@ -19,6 +21,7 @@ class HomeViewController: UIViewController {
         
         presenter.delegate = self
         configureTableView()
+        configureFloatingPanel()
         
         Task {
             await presenter.getHomeObjects()
@@ -38,6 +41,7 @@ class HomeViewController: UIViewController {
         tableViewHome.delegate = self
         tableViewHome.dataSource = self
         tableViewHome.separatorStyle = .none
+        tableViewHome.contentInset = UIEdgeInsets(top: -32.0, left: 0.0, bottom: -80.0, right: 0.0)
     }
 }
 
@@ -101,6 +105,30 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let item = objectArray[indexPath.section]
+        var videoId: String = ""
+        
+        if let playlistItems = item as? [PlaylistItemResponse.Item] {
+            videoId = playlistItems[indexPath.row].contentDetails?.videoId ?? ""
+        } else if let videos = item as? [VideoResponse.Item] {
+            videoId = videos[indexPath.row].id ?? ""
+        } else {
+            return
+        }
+        
+        presentViewPanel(videoId: videoId)
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let pan = scrollView.panGestureRecognizer
+        let velocity = pan.velocity(in: scrollView).y
+        
+        if velocity < -5 {
+            navigationController?.setNavigationBarHidden(true, animated: true)
+        } else if velocity > 5 {
+            navigationController?.setNavigationBarHidden(false, animated: true)
+        }
     }
     
     func configureBottomSheet() {
@@ -115,5 +143,32 @@ extension HomeViewController: HomePresenterDelegate {
         objectArray = array
         self.sectionTitleArray = sectionTitleArray
         tableViewHome.reloadData()
+    }
+}
+
+extension HomeViewController: FloatingPanelControllerDelegate {
+    func presentViewPanel(videoId: String) {
+        let contentVC = PlayVideoViewController()
+        contentVC.videoId = videoId
+        fpc.set(contentViewController: contentVC)
+        present(fpc, animated: true)
+    }
+    
+    func configureFloatingPanel() {
+        fpc = FloatingPanelController()
+        fpc.delegate = self
+        fpc.isRemovalInteractionEnabled = true
+        fpc.surfaceView.grabberHandle.isHidden = true
+        fpc.layout = MyFloatingPanelLayout()
+        fpc.surfaceView.contentPadding = UIEdgeInsets(top: -56.0, left: 0.0, bottom: -56.0, right: 0.0)
+    }
+    
+    class MyFloatingPanelLayout: FloatingPanelLayout {
+        let position: FloatingPanelPosition = .bottom
+        let initialState: FloatingPanelState = .full
+        let anchors: [FloatingPanelState: FloatingPanelLayoutAnchoring] = [
+            .full: FloatingPanelLayoutAnchor(absoluteInset: 0.0, edge: .top, referenceGuide: .safeArea),
+            .tip: FloatingPanelLayoutAnchor(absoluteInset: 56.0, edge: .bottom, referenceGuide: .safeArea),
+        ]
     }
 }

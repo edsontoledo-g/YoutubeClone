@@ -1,0 +1,470 @@
+{
+    "kind": "youtube#playlistListResponse",
+    "etag": "V41HHaWMyl6tZAcqGsV16VjKXHY",
+    "pageInfo": {
+        "totalResults": 10,
+        "resultsPerPage": 25
+    },
+    "items": [
+        {
+            "kind": "youtube#playlist",
+            "etag": "1aMTCI9CziZKEOP8ZYCzoFSMnKo",
+            "id": "PLJseMeypmy7lGxZ8369cc8kHi5dloeR3a",
+            "snippet": {
+                "publishedAt": "2022-11-18T23:20:33Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Last Day of Summer (Sped Up) [Lyric Videos]",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/v-Y7whxg8a4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/v-Y7whxg8a4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/v-Y7whxg8a4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/v-Y7whxg8a4/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/v-Y7whxg8a4/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "localized": {
+                    "title": "Last Day of Summer (Sped Up) [Lyric Videos]",
+                    "description": ""
+                }
+            },
+            "contentDetails": {
+                "itemCount": 12
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "bm1Kbz7EVhmmItD0G8nzL1jECjc",
+            "id": "PLJseMeypmy7mc8T5yUv41HR1UviGTe_-t",
+            "snippet": {
+                "publishedAt": "2022-10-27T21:26:57Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Last Day of Summer (Sped Up)",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/sXE45IO5lX4/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/sXE45IO5lX4/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/sXE45IO5lX4/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/sXE45IO5lX4/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/sXE45IO5lX4/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "localized": {
+                    "title": "Last Day of Summer (Sped Up)",
+                    "description": ""
+                }
+            },
+            "contentDetails": {
+                "itemCount": 13
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "WQATJwHxQ4pSXFGFN4miL2b4E7A",
+            "id": "PLJseMeypmy7kErt8qUC5pXZdbu9Rw2nRY",
+            "snippet": {
+                "publishedAt": "2022-07-19T15:29:44Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Live Videos",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/irm2b8NxM0c/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/irm2b8NxM0c/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/irm2b8NxM0c/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/irm2b8NxM0c/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/irm2b8NxM0c/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "localized": {
+                    "title": "Live Videos",
+                    "description": ""
+                }
+            },
+            "contentDetails": {
+                "itemCount": 1
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "j3M23qMgo4MexDhfTsCdz-nZR-I",
+            "id": "PLJseMeypmy7kT7D8UwcwKEf9cClfAaxTd",
+            "snippet": {
+                "publishedAt": "2021-11-05T01:03:15Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Still Over It",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/Dj24XNq1kvY/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/Dj24XNq1kvY/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/Dj24XNq1kvY/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/Dj24XNq1kvY/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/Dj24XNq1kvY/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "localized": {
+                    "title": "Still Over It",
+                    "description": ""
+                }
+            },
+            "contentDetails": {
+                "itemCount": 20
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "d2QyHyiQ6iteWS4eUjRfYAN09PM",
+            "id": "PLJseMeypmy7lomP2VLSRVYzu39jh-QvlR",
+            "snippet": {
+                "publishedAt": "2020-07-10T05:12:21Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Life on Earth Lyric Videos",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/LgJhcGl_h7Y/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/LgJhcGl_h7Y/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/LgJhcGl_h7Y/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/LgJhcGl_h7Y/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/LgJhcGl_h7Y/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "localized": {
+                    "title": "Life on Earth Lyric Videos",
+                    "description": ""
+                }
+            },
+            "contentDetails": {
+                "itemCount": 6
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "dy3LjWQV8ZXCUIZaDtIK9j5Ul70",
+            "id": "PLJseMeypmy7lpVyJSj_XeXN8DPk8qOJmg",
+            "snippet": {
+                "publishedAt": "2020-03-19T18:17:00Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Over It Lyric Videos",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/BfMb4ivGGaI/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/BfMb4ivGGaI/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/BfMb4ivGGaI/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/BfMb4ivGGaI/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/BfMb4ivGGaI/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "localized": {
+                    "title": "Over It Lyric Videos",
+                    "description": ""
+                }
+            },
+            "contentDetails": {
+                "itemCount": 14
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "9OzdBiOFpS-X3c3fOicv-6zkPKA",
+            "id": "PLJseMeypmy7nqd_V2JLoimqPPbegxr-GY",
+            "snippet": {
+                "publishedAt": "2019-12-12T19:25:39Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Girls Need Love Tour Recap",
+                "description": "",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/8sz848C4-wU/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/8sz848C4-wU/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/8sz848C4-wU/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/8sz848C4-wU/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/8sz848C4-wU/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "localized": {
+                    "title": "Girls Need Love Tour Recap",
+                    "description": ""
+                }
+            },
+            "contentDetails": {
+                "itemCount": 2
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "usUDPcIBakXMTqTY_HUkGZgslz0",
+            "id": "PLJseMeypmy7llWAVohVUDXseRp_2T1vdw",
+            "snippet": {
+                "publishedAt": "2019-10-01T21:49:46Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Over It",
+                "description": "Summer Walker - Over It\nOut now\n\n#SummerWalker #OverIt #PlayingGames",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/PY9HTSBXE8s/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/PY9HTSBXE8s/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/PY9HTSBXE8s/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/PY9HTSBXE8s/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/PY9HTSBXE8s/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "localized": {
+                    "title": "Over It",
+                    "description": "Summer Walker - Over It\nOut now\n\n#SummerWalker #OverIt #PlayingGames"
+                }
+            },
+            "contentDetails": {
+                "itemCount": 24
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "cWhAQa4g89j9h5hRA-KV7nH6eqM",
+            "id": "PLJseMeypmy7nHFImcLMPE2-TiQoZwhmZU",
+            "snippet": {
+                "publishedAt": "2019-03-20T03:15:33Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Summer Walker Official Music Videos",
+                "description": "Summer Walker Official Music Videos\n\n#SummerWalker #MusicVideos",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/i1dqmmgAeKo/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/i1dqmmgAeKo/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/i1dqmmgAeKo/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/i1dqmmgAeKo/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/i1dqmmgAeKo/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "localized": {
+                    "title": "Summer Walker Official Music Videos",
+                    "description": "Summer Walker Official Music Videos\n\n#SummerWalker #MusicVideos"
+                }
+            },
+            "contentDetails": {
+                "itemCount": 10
+            }
+        },
+        {
+            "kind": "youtube#playlist",
+            "etag": "Hgzgyj6qrv3vjgUjgxPEN0WUMec",
+            "id": "PLJseMeypmy7mRj2-vfYkSMpo5fv8Q8w8J",
+            "snippet": {
+                "publishedAt": "2018-10-18T19:04:25Z",
+                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
+                "title": "Last Day of Summer",
+                "description": "Summer Walker - Last Day Of Summer\n\n#SummerWalker #LastDayofSummer",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://i.ytimg.com/vi/ez4OxOLeRus/default.jpg",
+                        "width": 120,
+                        "height": 90
+                    },
+                    "medium": {
+                        "url": "https://i.ytimg.com/vi/ez4OxOLeRus/mqdefault.jpg",
+                        "width": 320,
+                        "height": 180
+                    },
+                    "high": {
+                        "url": "https://i.ytimg.com/vi/ez4OxOLeRus/hqdefault.jpg",
+                        "width": 480,
+                        "height": 360
+                    },
+                    "standard": {
+                        "url": "https://i.ytimg.com/vi/ez4OxOLeRus/sddefault.jpg",
+                        "width": 640,
+                        "height": 480
+                    },
+                    "maxres": {
+                        "url": "https://i.ytimg.com/vi/ez4OxOLeRus/maxresdefault.jpg",
+                        "width": 1280,
+                        "height": 720
+                    }
+                },
+                "channelTitle": "Summer Walker",
+                "localized": {
+                    "title": "Last Day of Summer",
+                    "description": "Summer Walker - Last Day Of Summer\n\n#SummerWalker #LastDayofSummer"
+                }
+            },
+            "contentDetails": {
+                "itemCount": 13
+            }
+        }
+    ]
+}

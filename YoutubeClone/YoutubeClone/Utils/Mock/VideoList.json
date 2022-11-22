@@ -10,34 +10,6 @@
     "items": [
         {
             "kind": "youtube#searchResult",
-            "etag": "lpRrDzkhFemm8YPqyq1VVTaCKMI",
-            "id": {
-                "kind": "youtube#channel",
-                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw"
-            },
-            "snippet": {
-                "publishedAt": "2015-07-09T21:49:09Z",
-                "channelId": "UCSpNS4dJ8wIScwMqatIdiQw",
-                "title": "Summer Walker",
-                "description": "The Official Summer Walker YouTube Channel. Summer's debut album “Over It” out now!",
-                "thumbnails": {
-                    "default": {
-                        "url": "https://yt3.ggpht.com/xlrY21ClHFH6D8aKUygt5mmbd7qYuJz9LOGFxdmGZLSqCjzrCjTF1Z4FR8t6_am1bCktMc55=s88-c-k-c0xffffffff-no-rj-mo"
-                    },
-                    "medium": {
-                        "url": "https://yt3.ggpht.com/xlrY21ClHFH6D8aKUygt5mmbd7qYuJz9LOGFxdmGZLSqCjzrCjTF1Z4FR8t6_am1bCktMc55=s240-c-k-c0xffffffff-no-rj-mo"
-                    },
-                    "high": {
-                        "url": "https://yt3.ggpht.com/xlrY21ClHFH6D8aKUygt5mmbd7qYuJz9LOGFxdmGZLSqCjzrCjTF1Z4FR8t6_am1bCktMc55=s800-c-k-c0xffffffff-no-rj-mo"
-                    }
-                },
-                "channelTitle": "Summer Walker",
-                "liveBroadcastContent": "none",
-                "publishTime": "2015-07-09T21:49:09Z"
-            }
-        },
-        {
-            "kind": "youtube#searchResult",
             "etag": "_kC1V6iblEpHure2VIY-fm2Z0L8",
             "id": {
                 "kind": "youtube#video",
