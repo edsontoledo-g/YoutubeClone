@@ -44,12 +44,11 @@
 		BC8EACA0291492C50033CD45 /* ChannelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC8EAC9E291492C50033CD45 /* ChannelsViewController.xib */; };
 		BC8EACA3291492D30033CD45 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8EACA1291492D30033CD45 /* AboutViewController.swift */; };
 		BC8EACA4291492D30033CD45 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC8EACA2291492D30033CD45 /* AboutViewController.xib */; };
+		BCA2F34A292D261100A7BDB9 /* ButtonsIconList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA2F349292D261100A7BDB9 /* ButtonsIconList.swift */; };
 		BCBB2579292C44AB00F55AFC /* TabsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB2578292C44AB00F55AFC /* TabsView.swift */; };
 		BCBB257D292C466A00F55AFC /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB257B292C466A00F55AFC /* OptionCell.swift */; };
 		BCBB257E292C466A00F55AFC /* OptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBB257C292C466A00F55AFC /* OptionCell.xib */; };
 		BCBB2581292C7D8900F55AFC /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = BCBB2580292C7D8900F55AFC /* FloatingPanel */; };
-		BCBB2585292C7E1300F55AFC /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB2583292C7E1300F55AFC /* PlayVideoViewController.swift */; };
-		BCBB2586292C7E1300F55AFC /* PlayVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBB2584292C7E1300F55AFC /* PlayVideoViewController.xib */; };
 		BCCA09B7291A055800106C68 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BCCA09B6291A055800106C68 /* SDWebImage */; };
 		BCCB8A9E291983C2001382C8 /* HomeProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB8A9D291983C2001382C8 /* HomeProviderMock.swift */; };
 		BCCB8AA129198438001382C8 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB8AA029198438001382C8 /* Utils.swift */; };
@@ -65,6 +64,16 @@
 		BCCB8AB629198D6F001382C8 /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCB8AB429198D6E001382C8 /* VideoCell.xib */; };
 		BCCB8AB929198D90001382C8 /* PlaylistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCB8AB729198D90001382C8 /* PlaylistCell.swift */; };
 		BCCB8ABA29198D90001382C8 /* PlaylistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCCB8AB829198D90001382C8 /* PlaylistCell.xib */; };
+		BCD67220292D055400CA3113 /* PlayVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6721E292D055400CA3113 /* PlayVideoViewController.swift */; };
+		BCD67221292D055400CA3113 /* PlayVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD6721F292D055400CA3113 /* PlayVideoViewController.xib */; };
+		BCD67224292D081900CA3113 /* YouTubeiOSPlayerHelper in Frameworks */ = {isa = PBXBuildFile; productRef = BCD67223292D081900CA3113 /* YouTubeiOSPlayerHelper */; };
+		BCD67229292D0DB200CA3113 /* PlayVideoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD67228292D0DB200CA3113 /* PlayVideoProvider.swift */; };
+		BCD6722B292D0DBB00CA3113 /* PlayVideoProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6722A292D0DBB00CA3113 /* PlayVideoProviderMock.swift */; };
+		BCD6722D292D114B00CA3113 /* PlayVideoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6722C292D114B00CA3113 /* PlayVideoPresenter.swift */; };
+		BCD67231292D161900CA3113 /* VideoHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD6722F292D161900CA3113 /* VideoHeaderCell.swift */; };
+		BCD67232292D161900CA3113 /* VideoHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD67230292D161900CA3113 /* VideoHeaderCell.xib */; };
+		BCD67235292D163300CA3113 /* VideoFullWidthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD67233292D163300CA3113 /* VideoFullWidthCell.swift */; };
+		BCD67236292D163300CA3113 /* VideoFullWidthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD67234292D163300CA3113 /* VideoFullWidthCell.xib */; };
 		BCE27152291ABB8100A2F76F /* BottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE27150291ABB8100A2F76F /* BottomSheetViewController.swift */; };
 		BCE27153291ABB8100A2F76F /* BottomSheetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCE27151291ABB8100A2F76F /* BottomSheetViewController.xib */; };
 		BCE27156291AD07A00A2F76F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCE27155291AD07A00A2F76F /* UIView+Extension.swift */; };
@@ -110,11 +119,10 @@
 		BC8EAC9E291492C50033CD45 /* ChannelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelsViewController.xib; sourceTree = "<group>"; };
 		BC8EACA1291492D30033CD45 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		BC8EACA2291492D30033CD45 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		BCA2F349292D261100A7BDB9 /* ButtonsIconList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsIconList.swift; sourceTree = "<group>"; };
 		BCBB2578292C44AB00F55AFC /* TabsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabsView.swift; sourceTree = "<group>"; };
 		BCBB257B292C466A00F55AFC /* OptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
 		BCBB257C292C466A00F55AFC /* OptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionCell.xib; sourceTree = "<group>"; };
-		BCBB2583292C7E1300F55AFC /* PlayVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayVideoViewController.swift; sourceTree = "<group>"; };
-		BCBB2584292C7E1300F55AFC /* PlayVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayVideoViewController.xib; sourceTree = "<group>"; };
 		BCCB8A9D291983C2001382C8 /* HomeProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProviderMock.swift; sourceTree = "<group>"; };
 		BCCB8AA029198438001382C8 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		BCCB8AA22919857D001382C8 /* Channel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Channel.json; sourceTree = "<group>"; };
@@ -129,6 +137,15 @@
 		BCCB8AB429198D6E001382C8 /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
 		BCCB8AB729198D90001382C8 /* PlaylistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistCell.swift; sourceTree = "<group>"; };
 		BCCB8AB829198D90001382C8 /* PlaylistCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaylistCell.xib; sourceTree = "<group>"; };
+		BCD6721E292D055400CA3113 /* PlayVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayVideoViewController.swift; path = ../../../../../../../../Documents/PlayVideoViewController.swift; sourceTree = "<group>"; };
+		BCD6721F292D055400CA3113 /* PlayVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlayVideoViewController.xib; path = ../../../../../../../../Documents/PlayVideoViewController.xib; sourceTree = "<group>"; };
+		BCD67228292D0DB200CA3113 /* PlayVideoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayVideoProvider.swift; path = ../../../../../../../../Documents/PlayVideoProvider.swift; sourceTree = "<group>"; };
+		BCD6722A292D0DBB00CA3113 /* PlayVideoProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayVideoProviderMock.swift; path = ../../../../../../../../Documents/PlayVideoProviderMock.swift; sourceTree = "<group>"; };
+		BCD6722C292D114B00CA3113 /* PlayVideoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayVideoPresenter.swift; path = ../../../../../../../../Documents/PlayVideoPresenter.swift; sourceTree = "<group>"; };
+		BCD6722F292D161900CA3113 /* VideoHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoHeaderCell.swift; path = ../../../../../../../../../Documents/VideoHeaderCell.swift; sourceTree = "<group>"; };
+		BCD67230292D161900CA3113 /* VideoHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = VideoHeaderCell.xib; path = ../../../../../../../../../Documents/VideoHeaderCell.xib; sourceTree = "<group>"; };
+		BCD67233292D163300CA3113 /* VideoFullWidthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoFullWidthCell.swift; path = ../../../../../../../../../Documents/VideoFullWidthCell.swift; sourceTree = "<group>"; };
+		BCD67234292D163300CA3113 /* VideoFullWidthCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = VideoFullWidthCell.xib; path = ../../../../../../../../../Documents/VideoFullWidthCell.xib; sourceTree = "<group>"; };
 		BCE27150291ABB8100A2F76F /* BottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		BCE27151291ABB8100A2F76F /* BottomSheetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottomSheetViewController.xib; sourceTree = "<group>"; };
 		BCE27155291AD07A00A2F76F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
@@ -141,6 +158,7 @@
 			files = (
 				BCCA09B7291A055800106C68 /* SDWebImage in Frameworks */,
 				BCBB2581292C7D8900F55AFC /* FloatingPanel in Frameworks */,
+				BCD67224292D081900CA3113 /* YouTubeiOSPlayerHelper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +205,17 @@
 				BC15A793292BE63600B833F2 /* PlaylistsProviderMock.swift */,
 			);
 			path = Provider;
+			sourceTree = "<group>";
+		};
+		BC537711292D0428004DC591 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCD6721E292D055400CA3113 /* PlayVideoViewController.swift */,
+				BCD6721F292D055400CA3113 /* PlayVideoViewController.xib */,
+				BCD6722E292D15D300CA3113 /* Cells */,
+				BCA2F348292D25F500A7BDB9 /* CustomViews */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		BC8600482914B580005DADD1 /* ServiceLayer */ = {
@@ -359,6 +388,14 @@
 			path = About;
 			sourceTree = "<group>";
 		};
+		BCA2F348292D25F500A7BDB9 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				BCA2F349292D261100A7BDB9 /* ButtonsIconList.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		BCBB2577292C448600F55AFC /* TabsView */ = {
 			isa = PBXGroup;
 			children = (
@@ -380,8 +417,10 @@
 		BCBB2582292C7DCE00F55AFC /* PlayVideo */ = {
 			isa = PBXGroup;
 			children = (
-				BCBB2583292C7E1300F55AFC /* PlayVideoViewController.swift */,
-				BCBB2584292C7E1300F55AFC /* PlayVideoViewController.xib */,
+				BC537711292D0428004DC591 /* View */,
+				BCD67226292D0D5000CA3113 /* Presenter */,
+				BCD67227292D0D6300CA3113 /* Provider */,
+				BCD67225292D0D4900CA3113 /* Model */,
 			);
 			path = PlayVideo;
 			sourceTree = "<group>";
@@ -411,6 +450,41 @@
 				BCCB8AB829198D90001382C8 /* PlaylistCell.xib */,
 			);
 			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		BCD67225292D0D4900CA3113 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCD67226292D0D5000CA3113 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BCD6722C292D114B00CA3113 /* PlayVideoPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		BCD67227292D0D6300CA3113 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				BCD67228292D0DB200CA3113 /* PlayVideoProvider.swift */,
+				BCD6722A292D0DBB00CA3113 /* PlayVideoProviderMock.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		BCD6722E292D15D300CA3113 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				BCD6722F292D161900CA3113 /* VideoHeaderCell.swift */,
+				BCD67230292D161900CA3113 /* VideoHeaderCell.xib */,
+				BCD67233292D163300CA3113 /* VideoFullWidthCell.swift */,
+				BCD67234292D163300CA3113 /* VideoFullWidthCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		BCE2714F291ABB5400A2F76F /* BottomSheet */ = {
@@ -449,6 +523,7 @@
 			packageProductDependencies = (
 				BCCA09B6291A055800106C68 /* SDWebImage */,
 				BCBB2580292C7D8900F55AFC /* FloatingPanel */,
+				BCD67223292D081900CA3113 /* YouTubeiOSPlayerHelper */,
 			);
 			productName = YoutubeClone;
 			productReference = BC890DAD29141F3E007718C8 /* YoutubeClone.app */;
@@ -481,6 +556,7 @@
 			packageReferences = (
 				BCCA09B5291A055800106C68 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				BCBB257F292C7D8900F55AFC /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+				BCD67222292D081800CA3113 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */,
 			);
 			productRefGroup = BC890DAE29141F3E007718C8 /* Products */;
 			projectDirPath = "";
@@ -500,6 +576,7 @@
 				BC8EAC9C291492BC0033CD45 /* PlaylistsViewController.xib in Resources */,
 				BCCB8AA9291985D9001382C8 /* Videos.json in Resources */,
 				BCCB8ABA29198D90001382C8 /* PlaylistCell.xib in Resources */,
+				BCD67236292D163300CA3113 /* VideoFullWidthCell.xib in Resources */,
 				BCCB8AA32919857D001382C8 /* Channel.json in Resources */,
 				BC15A796292BE96E00B833F2 /* PlaylistsList.json in Resources */,
 				BC890DBD29141F41007718C8 /* LaunchScreen.storyboard in Resources */,
@@ -514,8 +591,9 @@
 				BC15A78C292BDFB200B833F2 /* VideoList.json in Resources */,
 				BC890DB829141F3E007718C8 /* Main.storyboard in Resources */,
 				BCCB8AA529198594001382C8 /* Playlists.json in Resources */,
+				BCD67232292D161900CA3113 /* VideoHeaderCell.xib in Resources */,
 				BC8EAC94291492890033CD45 /* HomeViewController.xib in Resources */,
-				BCBB2586292C7E1300F55AFC /* PlayVideoViewController.xib in Resources */,
+				BCD67221292D055400CA3113 /* PlayVideoViewController.xib in Resources */,
 				BC8EACA0291492C50033CD45 /* ChannelsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -527,24 +605,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD6722B292D0DBB00CA3113 /* PlayVideoProviderMock.swift in Sources */,
 				BC8EAC9F291492C50033CD45 /* ChannelsViewController.swift in Sources */,
+				BCD6722D292D114B00CA3113 /* PlayVideoPresenter.swift in Sources */,
 				BC7A85B429155D9F00227445 /* PlaylistItemResponse.swift in Sources */,
 				BC8600572914BBAF005DADD1 /* HomeProvider.swift in Sources */,
 				BC890DB529141F3E007718C8 /* ViewController.swift in Sources */,
 				BC8EACA3291492D30033CD45 /* AboutViewController.swift in Sources */,
 				BC15A798292BFF7700B833F2 /* BaseViewController.swift in Sources */,
-				BCBB2585292C7E1300F55AFC /* PlayVideoViewController.swift in Sources */,
+				BCD67231292D161900CA3113 /* VideoHeaderCell.swift in Sources */,
+				BCD67220292D055400CA3113 /* PlayVideoViewController.swift in Sources */,
 				BCBB2579292C44AB00F55AFC /* TabsView.swift in Sources */,
 				BC15A786292BD85500B833F2 /* VideosPresenter.swift in Sources */,
 				BCCB8AB529198D6F001382C8 /* VideoCell.swift in Sources */,
 				BC890DB129141F3E007718C8 /* AppDelegate.swift in Sources */,
 				BC15A792292BE62E00B833F2 /* PlaylistsProvider.swift in Sources */,
 				BC15A788292BD88000B833F2 /* VideosProvider.swift in Sources */,
+				BCA2F34A292D261100A7BDB9 /* ButtonsIconList.swift in Sources */,
 				BCCB8A9E291983C2001382C8 /* HomeProviderMock.swift in Sources */,
 				BCCB8AA129198438001382C8 /* Utils.swift in Sources */,
 				BC8EAC872914904F0033CD45 /* RootPageViewController.swift in Sources */,
 				BC8600512914B87E005DADD1 /* Constants.swift in Sources */,
 				BCCB8AB929198D90001382C8 /* PlaylistCell.swift in Sources */,
+				BCD67235292D163300CA3113 /* VideoFullWidthCell.swift in Sources */,
 				BC7A85B229155C4F00227445 /* ChannelResponse.swift in Sources */,
 				BCCB8AAD29198B90001382C8 /* MockManager.swift in Sources */,
 				BC15A790292BE5A100B833F2 /* PlaylistsPresenter.swift in Sources */,
@@ -555,6 +638,7 @@
 				BC890DB329141F3E007718C8 /* SceneDelegate.swift in Sources */,
 				BC15A78A292BDA1700B833F2 /* VideosProviderMock.swift in Sources */,
 				BCBB257D292C466A00F55AFC /* OptionCell.swift in Sources */,
+				BCD67229292D0DB200CA3113 /* PlayVideoProvider.swift in Sources */,
 				BCE27152291ABB8100A2F76F /* BottomSheetViewController.swift in Sources */,
 				BC8600592914BC2C005DADD1 /* VideoResponse.swift in Sources */,
 				BC8EAC93291492890033CD45 /* HomeViewController.swift in Sources */,
@@ -716,8 +800,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -743,8 +827,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -798,6 +882,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		BCD67222292D081800CA3113 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/youtube/youtube-ios-player-helper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -810,6 +902,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BCCA09B5291A055800106C68 /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
+		};
+		BCD67223292D081900CA3113 /* YouTubeiOSPlayerHelper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCD67222292D081800CA3113 /* XCRemoteSwiftPackageReference "youtube-ios-player-helper" */;
+			productName = YouTubeiOSPlayerHelper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

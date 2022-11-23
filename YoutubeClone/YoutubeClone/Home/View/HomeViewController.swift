@@ -8,11 +8,12 @@
 import UIKit
 import FloatingPanel
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     var presenter = HomePresenter()
     private var objectArray = [[Any]]()
     private var sectionTitleArray = [String]()
     var fpc: FloatingPanelController!
+    var floatingPanelIsPresented = false
     
     @IBOutlet var tableViewHome: UITableView!
     
@@ -117,7 +118,18 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return
         }
         
-        presentViewPanel(videoId: videoId)
+        if floatingPanelIsPresented {
+            fpc.willMove(toParent: nil)
+            fpc.hide(animated: true) { [weak self] in
+                self?.fpc.view.removeFromSuperview()
+                self?.fpc.removeFromParent()
+                self?.dismiss(animated: true) {
+                    self?.presentViewPanel(videoId: videoId)
+                }
+            }
+        } else {
+            presentViewPanel(videoId: videoId)
+        }
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
@@ -150,7 +162,19 @@ extension HomeViewController: FloatingPanelControllerDelegate {
     func presentViewPanel(videoId: String) {
         let contentVC = PlayVideoViewController()
         contentVC.videoId = videoId
+        contentVC.goingToBeCollapsed = { [weak self] goingToBeCollapsed in
+            if goingToBeCollapsed {
+                self?.fpc.move(to: .tip, animated: true)
+                NotificationCenter.default.post(name: .viewPosition, object: ["position": "bottom"])
+                self?.fpc.surfaceView.contentPadding = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+            } else {
+                self?.fpc.move(to: .full, animated: true)
+                NotificationCenter.default.post(name: .viewPosition, object: ["position": "top"])
+                self?.fpc.surfaceView.contentPadding = UIEdgeInsets(top: -56.0, left: 0.0, bottom: -56.0, right: 0.0)
+            }
+        }
         fpc.set(contentViewController: contentVC)
+        floatingPanelIsPresented = true
         present(fpc, animated: true)
     }
     
@@ -160,7 +184,21 @@ extension HomeViewController: FloatingPanelControllerDelegate {
         fpc.isRemovalInteractionEnabled = true
         fpc.surfaceView.grabberHandle.isHidden = true
         fpc.layout = MyFloatingPanelLayout()
-        fpc.surfaceView.contentPadding = UIEdgeInsets(top: -56.0, left: 0.0, bottom: -56.0, right: 0.0)
+        fpc.surfaceView.contentPadding = UIEdgeInsets(top: -56.0, left: 0.0, bottom: 0.0, right: 0.0)
+    }
+    
+    func floatingPanelDidRemove(_ fpc: FloatingPanelController) {
+        
+    }
+    
+    func floatingPanelWillEndDragging(_ fpc: FloatingPanelController, withVelocity velocity: CGPoint, targetState: UnsafeMutablePointer<FloatingPanelState>) {
+        if targetState.pointee != .full {
+            NotificationCenter.default.post(name: .viewPosition, object: ["position": "bottom"])
+            fpc.surfaceView.contentPadding = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+        } else {
+            NotificationCenter.default.post(name: .viewPosition, object: ["position": "top"])
+            fpc.surfaceView.contentPadding = UIEdgeInsets(top: -56.0, left: 0.0, bottom: -56.0, right: 0.0)
+        }
     }
     
     class MyFloatingPanelLayout: FloatingPanelLayout {
@@ -171,4 +209,9 @@ extension HomeViewController: FloatingPanelControllerDelegate {
             .tip: FloatingPanelLayoutAnchor(absoluteInset: 56.0, edge: .bottom, referenceGuide: .safeArea),
         ]
     }
+}
+
+extension NSNotification.Name {
+    static let viewPosition = Notification.Name("viewPosition")
+    static let expand = Notification.Name("expand")
 }

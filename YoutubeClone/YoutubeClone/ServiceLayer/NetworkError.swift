@@ -17,3 +17,26 @@ enum NetworkError: String, Error {
     case jsonDecoder
     case unauthorized
 }
+
+extension NetworkError: LocalizedError {
+    public var errorDescription: String? {
+        switch self {
+        case .invalidURL:
+            return NSLocalizedString("Invalid url", comment: "")
+        case .serializationFailed:
+            return NSLocalizedString("Failed when trying to serialize body request", comment: "")
+        case .generic:
+            return NSLocalizedString("Unknown error", comment: "")
+        case .couldNotDecodeData:
+            return NSLocalizedString("Wrong format data", comment: "")
+        case .httpResponseError:
+            return NSLocalizedString("Couldn't get a response from server", comment: "")
+        case .statusCodeError:
+            return NSLocalizedString("Server error ", comment: "")
+        case .jsonDecoder:
+            return NSLocalizedString("JSON error", comment: "")
+        case .unauthorized:
+            return NSLocalizedString("Session finished", comment: "")
+        }
+    }
+}

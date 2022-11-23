@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol HomePresenterDelegate: AnyObject {
+protocol HomePresenterDelegate: AnyObject, BaseViewProtocol {
     func getData(array: [[Any]], sectionTitleArray: [String])
 }
 
@@ -28,13 +28,19 @@ class HomePresenter {
     
     @MainActor
     func getHomeObjects() async {
+        delegate?.loadingView(.show)
         objectArray.removeAll()
         sectionTitleArray.removeAll()
         
         async let responseChannel = try await provider.getChannel(channelId: Constants.channelId).items
         async let responsePlaylists = try await provider.getPlaylists(channelId: Constants.channelId).items
         async let responseVideos = try await provider.getVideos(searchString: nil, channelId: Constants.channelId).items
+        
         do {
+            defer {
+                delegate?.loadingView(.hide)
+            }
+            
             let (channel, playlists, videos) = await (try responseChannel, try responsePlaylists, try responseVideos)
             objectArray.append(channel)
             sectionTitleArray.append("")
@@ -53,6 +59,11 @@ class HomePresenter {
             
             delegate?.getData(array: objectArray, sectionTitleArray: sectionTitleArray)
         } catch {
+            delegate?.showError(error.localizedDescription, completionHandler: { [weak self] in
+                Task {
+                    await self?.getHomeObjects()
+                }
+            })
             print(error.localizedDescription)
         }
     }

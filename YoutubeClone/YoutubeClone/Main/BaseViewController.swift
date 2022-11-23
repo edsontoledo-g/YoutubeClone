@@ -7,7 +7,18 @@
 
 import UIKit
 
+enum LoadingViewState {
+    case show
+    case hide
+}
+
+protocol BaseViewProtocol {
+    func loadingView(_ state: LoadingViewState)
+    func showError(_ error: String, completionHandler: (() -> Void)?)
+}
+
 class BaseViewController: UIViewController {
+    var loadingIndicator = UIActivityIndicatorView(style: .large)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,5 +67,38 @@ class BaseViewController: UIViewController {
     @objc
     func moreButtonPressed() {
         
+    }
+    
+    private func showLoading() {
+        view.addSubview(loadingIndicator)
+        
+        loadingIndicator.center = view.center
+        loadingIndicator.startAnimating()
+    }
+    
+    private func hideLoading() {
+        loadingIndicator.stopAnimating()
+        loadingIndicator.removeFromSuperview()
+    }
+}
+
+extension BaseViewController: BaseViewProtocol {
+    func showError(_ error: String, completionHandler: (() -> Void)? = nil) {
+        let ac = UIAlertController(title: "Error", message: error, preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Ok", style: .cancel))
+        ac.addAction(UIAlertAction(title: "Try again!", style: .default, handler: { _ in
+            completionHandler?()
+        }))
+        
+        self.present(ac, animated: true)
+    }
+    
+    func loadingView(_ state: LoadingViewState) {
+        switch state {
+        case .show:
+            showLoading()
+        case .hide:
+            hideLoading()
+        }
     }
 }
