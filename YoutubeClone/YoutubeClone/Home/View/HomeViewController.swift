@@ -150,7 +150,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-extension HomeViewController: HomePresenterDelegate {
+extension HomeViewController: HomeViewProtocol {
     func getData(array: [[Any]], sectionTitleArray: [String]) {
         objectArray = array
         self.sectionTitleArray = sectionTitleArray

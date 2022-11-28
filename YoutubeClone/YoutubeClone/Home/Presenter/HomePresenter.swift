@@ -7,13 +7,13 @@
 
 import Foundation
 
-protocol HomePresenterDelegate: AnyObject, BaseViewProtocol {
+protocol HomeViewProtocol: AnyObject, BaseViewProtocol {
     func getData(array: [[Any]], sectionTitleArray: [String])
 }
 
 class HomePresenter {
     var provider: HomeProviderProtocol
-    weak var delegate: HomePresenterDelegate?
+    weak var delegate: HomeViewProtocol?
     private var objectArray: [[Any]] = []
     private var sectionTitleArray: [String] = []
     

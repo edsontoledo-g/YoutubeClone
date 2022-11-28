@@ -8,8 +8,14 @@
 import Foundation
 
 class HomeProviderMock: HomeProviderProtocol {
+    var shouldFail: Bool = false
+    
     func getVideos(searchString: String?, channelId: String?) async throws -> VideoResponse {
-        Utils.decodeJSON(VideoResponse.self, filename: "Videos.json")
+        if shouldFail {
+            throw NetworkError.generic
+        }
+        
+        return Utils.decodeJSON(VideoResponse.self, filename: "Videos.json")
     }
     
     func getChannel(channelId: String) async throws -> ChannelResponse {
