@@ -1,0 +1,24 @@
+name: Test
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  test:
+    name: Test
+    runs-on: macos-latest
+    strategy:
+      matrix:
+        destination: ["platform=iOS Simulator,OS=16.0,name=iPhone 13"]
+    steps:
+      - name: Checkout
+        uses: action/checkout@v3
+      - name: Build and test
+        run: |
+          cd YoutubeClone
+          xcodebuild clean test -project YoutubeClone.xcodeproj -scheme YoutubeClone -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env:
+          destination: ${{matrix.destination}}
